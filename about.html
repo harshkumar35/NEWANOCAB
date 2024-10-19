@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+		<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
+    <title>Anocab</title>
+    <style>
+        body {
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+            transition: 0.3s all ease;
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            color: #000000;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        /* Banner styling */
+        .banner {
+            background: url('images/banner.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            color: white;
+            animation: fadeInDown 2s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Mission and Vision sections */
+        .mission-vision-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .mission,
+        .vision {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mission .text,
+        .vision .text {
+            width: 50%;
+            padding: 20px;
+            animation: slideInLeft 1.5s ease-out;
+        }
+
+        .mission img,
+        .vision img {
+            width: 40%;
+            animation: slideInRight 1.5s ease-out;
+        }
+
+        .mission h2,
+        .vision h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .mission p,
+        .vision p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+                <span></span>
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="shop.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Networking</a></li>
+                        </ul>
+
+                        <style>
+                            .dropdown-menu {
+                                background-color: #ffffff; /* Default background color */
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .dropdown-menu .dropdown-item:hover {
+                                background-color: #639cd1; /* Grey background color on hover */
+                            }
+                        </style>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CLIENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="career.html">CAREER</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT US 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Adjust as needed */
+        }
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                margin-left: auto; /* Align the button to the right */
+            }
+        }
+    </style>
+    <!-- End Header/Navigation -->
+
+    <!-- Start Banner Section -->
+	<div class="banner" style="background: none;">
+		<spline-viewer url=""></spline-viewer>
+		<h1 style="position: absolute; color: white;">About Us</h1>
+	</div>
+	<!-- End Banner Section -->
+
+    <!-- Start Mission and Vision Section -->
+	<section class="mission-vision-section">
+		<div class="container">
+			<h2 class="section-title">Our Mission & Vision</h2>
+
+			<!-- Vision Section -->
+			<div class="vision">
+				<div class="text-box">
+					<h2>Our Vision</h2>
+					<p>Our vision is to be the global leader in wire and cable innovation, providing reliable, cutting-edge solutions that drive progress and sustainability. We aim to redefine connectivity across sectors, invest in advanced technologies, and promote energy-efficient products. Our commitment to safety, reliability, and environmental responsibility ensures we support global infrastructure and technology needs while minimizing our impact. We strive for continuous improvement and sustainable growth, creating a brighter, more connected future for all.</p>
+				</div>
+				<div class="image-box">
+					<img src="images/vision.png" alt="Vision Image">
+				</div>
+			</div>
+
+			<!-- Mission Section -->
+			<div class="mission">
+				<div class="image-box">
+					<img src="images/mission.png" alt="Mission Image">
+				</div>
+				<div class="text-box">
+					<h2>Our Mission</h2>
+					<p>Our mission is to deliver high-quality, innovative wire and cable solutions that ensure reliability, safety, and efficiency. We are committed to excellence, shaping the future of connectivity through our cutting-edge products and services.</p>
+					<p>What Drives Us:</p>
+					<ul>
+						<li>Quality and Precision: We produce products that meet the highest standards of quality, ensuring superior performance and longevity.</li>
+						<li>Innovative Solutions: We continuously develop advanced wire and cable technologies to improve efficiency and enable seamless operations.</li>
+						<li>Safety and Reliability: Our products provide reliable performance under all conditions, prioritizing the well-being of people and assets.</li>
+						<li>Sustainability and Responsibility: We adopt environmentally responsible practices to reduce our carbon footprint and offer energy-efficient solutions.</li>
+						<li>Customer-Centric Approach: We offer tailor-made wire and cable solutions to meet the specific needs of our customers.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<style>
+			.text-box, .image-box {
+				background: #fff;
+				padding: 20px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				border-radius: 8px;
+				margin: 20px;
+			}
+
+			.vision, .mission {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 40px;
+			}
+
+			.text-box h2 {
+				font-size: 28px;
+				margin-bottom: 20px;
+				color: #000000;
+			}
+
+			.text-box p, .text-box ul {
+				font-size: 18px;
+				line-height: 1.8;
+				color: #555555;
+			}
+
+			.text-box ul {
+				padding-left: 20px;
+			}
+
+			.text-box ul li {
+				margin-bottom: 10px;
+			}
+
+			.image-box img {
+				width: 100%;
+				border-radius: 8px;
+			}
+
+			@media (max-width: 768px) {
+				.vision, .mission {
+					flex-direction: column;
+				}
+
+				.text-box, .image-box {
+					width: 100%;
+					margin: 10px 0;
+				}
+			}
+		</style>
+	</section>
+    <!-- End Mission and Vision Section -->
+
+    <!-- Start Roadmap Section -->
+    <section class="roadmap-section">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #0d0d0d;
+                font-family: 'Arial', sans-serif;
+                color: #fff;
+            }
+
+            .roadmap-section {
+                padding: 80px 20px;
+                background-color: #1a1a1a;
+            }
+
+            .roadmap-container {
+                text-align: center;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+                position: relative;
+            }
+
+            h1 .highlight {
+                color: #e95bef;
+            }
+
+            .arc {
+                width: 200px;
+                height: 100px;
+                border-bottom: 4px solid #e95bef;
+                border-radius: 100px;
+                margin: 0 auto 60px auto;
+                position: relative;
+            }
+
+            .steps {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+
+            .step {
+                max-width: 250px;
+                text-align: center;
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            }
+
+            .step.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .step-circle {
+                width: 100px;
+                height: 100px;
+                border: 2px solid #e95bef;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                margin: 0 auto 20px;
+                background: linear-gradient(135deg, #8247e5, #e95bef);
+                color: #fff;
+                transform: rotate(0deg);
+                transition: transform 1s ease;
+            }
+
+            .step.visible .step-circle {
+                transform: rotate(360deg);
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #aaa;
+            }
+
+            @media (max-width: 768px) {
+                .steps {
+                    flex-direction: column;
+                }
+            }
+        </style>
+
+        <div class="roadmap-container">
+            <h1>Journey of <span class="highlight">Anocab's Wires and Cables</span></h1>
+
+            <div class="arc"></div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-circle">2024</div>
+                    <h3>Launch New Products</h3>
+                    <p>Define your vision. Start work now and rank the product and backlog.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2025</div>
+                    <h3>Expand Market Reach</h3>
+                    <p>Hold a release planning meeting and rank the product backlog. Grow your skill.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2026</div>
+                    <h3>Exclusive Partnerships</h3>
+                    <p>Finalize and share products release calendar and get success.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2027</div>
+                    <h3>Community Building</h3>
+                    <p>Engage with your audience and grow a strong wire and cable community.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2028</div>
+                    <h3>Technological Innovations</h3>
+                    <p>Collaborate with other industry leaders to innovate and expand.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2029</div>
+                    <h3>Final Milestone</h3>
+                    <p>Complete the project, review feedback, and celebrate success.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Function to check if the element is visible in the viewport
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            // Function to handle scroll and apply animations
+            function handleScroll() {
+                const steps = document.querySelectorAll('.step');
+
+                steps.forEach(step => {
+                    if (isElementInViewport(step)) {
+                        step.classList.add('visible');
+                    }
+                });
+            }
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger scroll event to check visibility on load
+            window.onload = handleScroll;
+        </script>
+    </section>
+    <!-- End Roadmap Section -->
+
+    <!-- Footer Section (Unchanged) -->
+    <footer class="footer-section">
+		<div class="container relative">
+			<div class="sofa-img text-right">
+				<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid" style="width: 100%; height: auto;">
+			</div>
+	
+			<style>
+				.sofa-img img {
+					max-width: 100%;
+					height: auto;
+				}
+	
+				@media (max-width: 768px) {
+					.sofa-img img {
+						max-width: 90%;
+					}
+				}
+	
+				@media (max-width: 576px) {
+					.sofa-img img {
+						max-width: 80%;
+					}
+				}
+			</style>
+	
+			<!-- Footer -->
+	
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4">
+					<div class="mb-4 footer-logo-wrap">
+						<a href="index.html" class="footer-logo">
+							<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;" class="img-fluid">
+						</a>
+					</div>
+					<p class="mb-4" style="color: #000000;">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+	
+					<ul class="list-unstyled custom-social d-inline-flex">
+						<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+						<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+	
+				<div class="col-lg-8">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="about.html">About us</a></li>
+								<li><a href="shop.html">Products</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+								<li><strong>Manufacturer/Importer:</strong>Anocab</li>
+								<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6 text-center text-lg-start">
+						<p class="mb-2" style ="color:#000000">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+					</div>
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled d-inline-flex ms-auto">
+							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- End Footer Section (Unchanged) -->
+
+    <!-- Bootstrap JS and other libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="IMAGE/favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Anocab</title>
+  <style>
+	body {
+	  color: #000000; /* Change the font color to black */
+	}
+	a {
+	  text-decoration: none;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease;
+	  color: #000000; /* Change the font color to black */
+	  text-decoration: underline; }
+	.section-title {
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature h3 {
+	  font-size: 14px;
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature p {
+	  font-size: 14px;
+	  line-height: 22px;
+	  color: #000000; /* Change the font color to black */
+	}
+	h1 ,h2 {
+    font-family: 'Kanit', sans-serif;
+    }
+	.popular-product {
+  overflow: hidden; /* Add this to hide the scrolling content */
+}
+
+.product-item-sm {
+  margin-bottom: 20px; /* Add some margin between items */
+}
+
+.marquee {
+  animation: marquee 8s linear infinite; /* Define the animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0); /* Start at the top */
+  }
+  100% {
+    transform: translateY(-100%); /* Move to the bottom */
+  }
+}
+</style>
+
+</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container d-flex justify-content-between align-items-center">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+					<span></span>
+				</a>
+
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								PRODUCT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="shop.html">All Products</a></li>
+								<li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+								<li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+								<li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+								<li><a class="dropdown-item" href="shop.html">Networking</a></li>
+							</ul>
+
+							<style>
+								.dropdown-menu {
+									background-color: #ffffff; /* Default background color */
+									transition: background-color 0.3s ease;
+								}
+
+								.dropdown-menu .dropdown-item:hover {
+									background-color: #639cd1; /* Grey background color on hover */
+								}
+							</style>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								ABOUT US
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Story</a></li>
+								<li><a class="dropdown-item" href="shop.html">Founder's Profile</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CLIENT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+							</ul>
+						</li>
+						<li><a class="nav-link" href="career.html">CAREER</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CONTACT US 
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+								<li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+				</div>
+			</div>
+		</nav>
+
+		<style>
+			.navbar-nav .dropdown:hover .dropdown-menu {
+				display: block;
+				margin-top: 0; /* Adjust as needed */
+			}
+			@media (max-width: 768px) {
+				.navbar-toggler {
+					margin-left: auto; /* Align the button to the right */
+				}
+			}
+		</style>
+		<!-- End Header/Navigation -->
+		<div style="background-color: rgb(255, 255, 255); padding: 10px 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<p style="margin: 0; font-size: 18px; color: black;"><h2><strong>Our locations</strong></h2></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Start Hero Section -->
+		<section class="hero-section">
+			<div class="container-fluid p-0">
+				<div class="row">
+					<div class="col-12">
+						<div class="map-container" style="height: 500px; position: relative;">
+							<div class="row">
+								<div class="col-md-12">
+									<h4 style="text-align: center; margin-top: 10px;">Plot. No. 10, IT Park,Bargi Hills, Jabalpur, Madhya Pradesh</h4>
+									<iframe 
+										id="map1"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.2369477922693!2d79.87883472845512!3d23.133251146915715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b3374db6064f%3A0x9e6ed16c97eb8105!2sANODE%20ELECTRIC%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1727239261202!5m2!1sen!2sin"
+										width="100%" 
+										height="450px" 
+										style="border:0; border: 5px solid white;" 
+										allowfullscreen="" 
+										loading="lazy">
+									</iframe>
+									<button id="nextMap" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #9dc3ef; color: white; border: none; border-radius: 5px; cursor: pointer;">Next</button>
+								</div>
+								<div class="col-md-12" style="display: none;">
+									<h4 style="text-align: center; margin-top: 10px;">SAMRADDHI INDUSTRIES	Word No.73 Opposite Dadda Nagar	Katangi Road Karmeta Jabalpur	Madha Pradesh, Pin Code: 482003</h4>
+									<iframe 
+										id="map2"
+										src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3666.7400572572533!2d79.897074!3d23.216141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDEyJzU4LjEiTiA3OcKwNTMnNDkuNSJF!5e0!3m2!1sen!2sin!4v1727677467672!5m2!1sen!2sin" 
+										width="100%" 
+										height="450px" 
+										style="border:0; border: 5px solid white;" 
+										allowfullscreen="" 
+										loading="lazy">
+									</iframe>
+									<button id="prevMap" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #9dc3ef; color: white; border: none; border-radius: 5px; cursor: pointer;">Previous</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			.map-container iframe {
+				transition: transform 0.3s ease;
+			}
+			.map-container iframe:hover {
+				transform: scale(1.05);
+			}
+		</style>
+
+		<script>
+			document.getElementById('nextMap').addEventListener('click', function() {
+				document.getElementById('map1').parentElement.style.display = 'none';
+				document.getElementById('map2').parentElement.style.display = 'block';
+			});
+			document.getElementById('prevMap').addEventListener('click', function() {
+				document.getElementById('map2').parentElement.style.display = 'none';
+				document.getElementById('map1').parentElement.style.display = 'block';
+			});
+		</script>
+		<!-- End Hero Section -->
+		<!-- Start Contact Form -->
+		<div class="untree_co-section mobile-margin">
+      <div class="container">
+
+        <div class="block">
+          <div class="row justify-content-center">
+
+
+            <div class="col-md-8 col-lg-8 pb-4">
+
+
+              <div class="row mb-5">
+                <div class="col-lg-4">
+                  <div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+                    <div class="service-icon color-1 mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </div> <!-- /.icon -->
+					<div class="service-contents">
+					  <p><a href="https://maps.app.goo.gl/rkPxrVkDhALXVVjZA" target="_blank">Plot. No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</a></p>
+					</div> <!-- /.service-contents-->
+                  </div> <!-- /.service -->
+                </div>
+
+                <div class="col-lg-4">
+                  <div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+                    <div class="service-icon color-1 mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                      </svg>
+                    </div> <!-- /.icon -->
+                    <div class="service-contents">
+                      <p>sales@anocab.com</p>
+                    </div> <!-- /.service-contents-->
+                  </div> <!-- /.service -->
+                </div>
+
+                <div class="col-lg-4">
+                  <div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+                    <div class="service-icon color-1 mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                    </div> <!-- /.icon -->
+                    <div class="service-contents">
+                      <p>1800 27000 75</p>
+                    </div> <!-- /.service-contents-->
+                  </div> <!-- /.service -->
+                </div>
+              </div>
+
+			  <form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="2f50411e-1805-49c2-820b-05c346c60014">
+			  
+				<div class="row">
+					<div class="form-group">
+					  <label class="text-black" for="fname">Full name</label>
+					  <input type="text" class="form-control" id="fname" name="name" required>
+					</div>
+				  </div>
+				
+				<div class="form-group">
+				  <label class="text-black" for="email">Email address</label>
+				  <input type="email" class="form-control" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label class="text-black" for="phone">Phone Number</label>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="+1 (555) 1234-567" required>
+				</div>
+			  
+				<div class="form-group mb-5">
+				  <label class="text-black" for="message">Message</label>
+				  <textarea name="message" class="form-control" id="message" cols="30" rows="5" required></textarea>
+				</div>
+			  
+				<button type="submit" class="btn btn-primary-hover-outline" style="background-color: #000000; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease;">
+					Send Message
+				</button>
+				<script>
+					document.querySelector('.btn-primary-hover-outline').addEventListener('mouseover', function() {
+						this.style.backgroundColor = '#333333';
+						this.style.transform = 'scale(1.05)';
+					});
+					document.querySelector('.btn-primary-hover-outline').addEventListener('mouseout', function() {
+						this.style.backgroundColor = '#000000';
+						this.style.transform = 'scale(1)';
+					});
+				</script>
+			  </form>
+			  
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- End Contact Form -->
+
+		
+
+		<!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative">
+				<div class="sofa-img text-right">
+					<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid" style="width: 100%; height: auto;">
+				</div>
+		
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap">
+							<a href="index.html" class="footer-logo">
+								<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;">
+							</a>
+						</div>
+						<p class="mb-4">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+		
+						<ul class="list-unstyled custom-social d-inline-flex">
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+		
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html">About us</a></li>
+									<li><a href="shop.html">Products</a></li>
+									<li><a href="blog.html">certificate</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+									<li><strong>Manufacturer/Importer:</strong>Anocab</li>
+									<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6 text-center text-lg-start">
+							<p class="mb-2">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+						</div>
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>

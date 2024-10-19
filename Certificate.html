@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <title>Anocab</title>
+  <style>
+	body {
+	  color: #000000; /* Change the font color to black */
+	}
+	a {
+	  text-decoration: none;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease;
+	  color: #000000; /* Change the font color to black */
+	  text-decoration: underline; }
+	.section-title {
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature h3 {
+	  font-size: 14px;
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature p {
+	  font-size: 14px;
+	  line-height: 22px;
+	  color: #000000; /* Change the font color to black */
+	}
+  </style>
+</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container d-flex justify-content-between align-items-center">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+					<span></span>
+				</a>
+
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								PRODUCT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="shop.html">All Products</a></li>
+								<li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+								<li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+								<li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+								<li><a class="dropdown-item" href="shop.html">Networking</a></li>
+							</ul>
+
+							<style>
+								.dropdown-menu {
+									background-color: #ffffff; /* Default background color */
+									transition: background-color 0.3s ease;
+								}
+
+								.dropdown-menu .dropdown-item:hover {
+									background-color: #639cd1; /* Grey background color on hover */
+								}
+							</style>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								ABOUT US
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Story</a></li>
+								<li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CLIENT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+							</ul>
+						</li>
+						<li><a class="nav-link" href="career.html">CAREER</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CONTACT US 
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+								<li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+				</div>
+			</div>
+		</nav>
+
+		<style>
+			.navbar-nav .dropdown:hover .dropdown-menu {
+				display: block;
+				margin-top: 0; /* Adjust as needed */
+			}
+			@media (max-width: 768px) {
+				.navbar-toggler {
+					margin-left: auto; /* Align the button to the right */
+				}
+			}
+		</style>
+
+		<!-- Start Hero Section -->
+		<section class="hero-section" style="background: linear-gradient(135deg, #98c2d7, #4188c7);">
+			<div class="container-fluid p-0">
+				<div class="row">
+					<div class="col-12">
+						<div class="map-container" style="height: 130px;"></div>
+						<h1 class="hero-title" style="text-align: center; padding: 50px 0; color: #000000; font-weight: bold;">Certificates</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			@media (max-width: 768px) {
+				.hero-section {
+					padding: 20px 0;
+				}
+				.hero-title {
+					font-size: 24px;
+					padding: 20px 0;
+				}
+				.map-container {
+					height: 100px;
+				}
+			}
+		</style>
+		<!-- End Hero Section -->
+
+		<!-- Start Logos Section -->
+		<section class="logos-section" style="padding: 20px 0;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/hallmark.png" alt="Logo 1" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/ES.png" alt="Logo 2" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/ISI.png" alt="Logo 3" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/NABCB.png" alt="Logo 4" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/export.png" alt="Logo 5" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+					<div class="col-4 col-sm-2 mb-4">
+						<img src="IMAGE/TUV.png" alt="Logo 6" class="img-fluid logo-animation" style="max-width: 80%;">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			@keyframes logoFadeIn {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+
+			.logo-animation {
+				animation: logoFadeIn 1s ease-in-out;
+			}
+		</style>
+		<!-- End Logos Section -->
+
+		
+
+		<!-- Start Blog Section -->
+		<div class="blog-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/CE.png" alt="Certificate 1" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 1</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/EMS.png" alt="Certificate 2" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 2</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/GEM.png" alt="Certificate 3" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 3</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/GMP.png" alt="Certificate 4" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 4</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/IEC.png" alt="Certificate 5" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 5</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/14255.png" alt="Certificate 5" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 5</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/TM.png" alt="Certificate 5" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 5</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/ZED.png" alt="Certificate 5" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 5</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/ISO.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/MP APPROVAL.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/398-2.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/398-4.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/649.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a href="#" class="post-thumbnail">
+								<img src="Certificate/7098.png" alt="Certificate 6" class="img-fluid" style="height: 400px; object-fit: cover;">
+							</a>
+							<div class="post-content-entry">
+								<h3><a href="#">Certificate Title 6</a></h3>
+								<div class="meta">
+									<span>by <a href="#">Issuer Name</a></span> <span>on <a href="#">Issue Date</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			@media (max-width: 768px) {
+				.post-thumbnail img {
+					height: auto !important;
+				}
+				.post-entry {
+					margin-bottom: 30px;
+				}
+				.post-content-entry h3 {
+					font-size: 18px;
+				}
+				.post-content-entry .meta {
+					font-size: 14px;
+				}
+			}
+		</style>
+		<!-- End Blog Section -->
+		<!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative">
+				<div class="sofa-img text-right">
+					<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid" style="width: 100%; height: auto;">
+				</div>
+		
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap">
+							<a href="index.html" class="footer-logo">
+								<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;">
+							</a>
+						</div>
+						<p class="mb-4">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+		
+						<ul class="list-unstyled custom-social d-inline-flex">
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+		
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html">About us</a></li>
+									<li><a href="shop.html">Products</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+									<li><strong>Manufacturer/Importer:</strong>Anocab</li>
+									<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6 text-center text-lg-start">
+							<p class="mb-2">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+						</div>
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .brand-section {
+            flex: 1;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 3rem;
+            color: white;
+            position: relative;
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        /* Shine Effect */
+        .brand-item::after {
+            content: '';
+            position: absolute;
+            top: -150%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.2) 50%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(45deg);
+            transition: 0.6s;
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        /* Logo Container and Animation */
+        .logo-container {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            perspective: 1000px;
+        }
+
+        .logo-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: rotateY(180deg);
+            transition: all 0.6s ease;
+        }
+
+        .logo-slide.active {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+
+        .brand-logo {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .pulse {
+            animation: pulse 1s ease-in-out;
+        }
+
+        /* Form Section */
+        .form-section {
+            flex: 1;
+            padding: 3rem;
+            background: white;
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+        }
+
+        .form-header h2 {
+            font-size: 1.8rem;
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .form-control:focus {
+            border-color: #1e3c72;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+        }
+
+        .floating-label {
+            position: absolute;
+            left: 0.8rem;
+            top: 0.8rem;
+            background: white;
+            padding: 0 0.5rem;
+            color: #666;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .form-control:focus + .floating-label,
+        .form-control:not(:placeholder-shown) + .floating-label {
+            transform: translateY(-1.2rem) scale(0.85);
+            color: #1e3c72;
+        }
+
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            background: #2a5298;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .brand-section, .form-section {
+                padding: 2rem;
+            }
+
+            .brand-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .form-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="brand-section">
+                <div class="brand-grid">
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo1">
+                            <div class="logo-slide active">
+                                <img src="mdjobsite-logo.png" alt="MDJobsite" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="rnjobsite-logo.png" alt="RNJobsite" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo2">
+                            <div class="logo-slide active">
+                                <img src="pajobsite-logo.png" alt="PAJobsite" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="medcruiter-logo.png" alt="MedCruiter" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo3">
+                            <div class="logo-slide active">
+                                <img src="npjobsite-logo.png" alt="NPJobsite" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="crnajobsite-logo.png" alt="CRNAJobsite" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo4">
+                            <div class="logo-slide active">
+                                <img src="mdjobsite-logo.png" alt="MDJobsite" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="npjobsite-logo.png" alt="NPJobsite" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo5">
+                            <div class="logo-slide active">
+                                <img src="newlogo1.png" alt="NewLogo1" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="newlogo2.png" alt="NewLogo2" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-item">
+                        <div class="logo-container" id="logo6">
+                            <div class="logo-slide active">
+                                <img src="newlogo3.png" alt="NewLogo3" class="brand-logo">
+                            </div>
+                            <div class="logo-slide">
+                                <img src="newlogo4.png" alt="NewLogo4" class="brand-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-header">
+                    <h2>Get in Touch</h2>
+                    <p>Fill out the form below and we'll get back to you shortly.</p>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2f50411e-1805-49c2-820b-05c346c60014">
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fname" name="name" required placeholder=" ">
+                        <label class="floating-label" for="fname">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" required placeholder=" ">
+                        <label class="floating-label" for="email">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" required placeholder=" "></textarea>
+                        <label class="floating-label" for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logo rotation functionality
+        function rotateLogo(containerId, delay) {
+            const container = document.getElementById(containerId);
+            const slides = container.getElementsByClassName('logo-slide');
+            let currentIndex = 0;
+
+            setInterval(() => {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }, 3000 + delay);
+        }
+
+        // Random pulse effect
+        function addRandomPulse() {
+            const items = document.querySelectorAll('.brand-item');
+            setInterval(() => {
+                const randomItem = items[Math.floor(Math.random() * items.length)];
+                randomItem.classList.add('pulse');
+                setTimeout(() => randomItem.classList.remove('pulse'), 1000);
+            }, 2000);
+        }
+
+        // Initialize animations
+        window.addEventListener('DOMContentLoaded', () => {
+            // Start logo rotations with different delays
+            rotateLogo('logo1', 0);
+            rotateLogo('logo2', 750);
+            rotateLogo('logo3', 1500);
+            rotateLogo('logo4', 2250);
+            rotateLogo('logo5', 3000);
+            rotateLogo('logo6', 3750);
+
+            // Start pulse effects
+            addRandomPulse();
+        });
+    </script>
+</body>
+</html>

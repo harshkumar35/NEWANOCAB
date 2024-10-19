@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="IMAGE/favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Anocab</title>
+  <style>
+	body {
+	  color: #000000; /* Change the font color to black */
+	}
+	a {
+	  text-decoration: none;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease;
+	  color: #000000; /* Change the font color to black */
+	  text-decoration: underline; }
+	.section-title {
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature h3 {
+	  font-size: 14px;
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature p {
+	  font-size: 14px;
+	  line-height: 22px;
+	  color: #000000; /* Change the font color to black */
+	}
+	h1 ,h2 {
+    font-family: 'Kanit', sans-serif;
+    }
+	.popular-product {
+  overflow: hidden; /* Add this to hide the scrolling content */
+}
+
+.product-item-sm {
+  margin-bottom: 20px; /* Add some margin between items */
+}
+
+.marquee {
+  animation: marquee 8s linear infinite; /* Define the animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0); /* Start at the top */
+  }
+  100% {
+    transform: translateY(-100%); /* Move to the bottom */
+  }
+}
+</style>
+
+</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container d-flex justify-content-between align-items-center">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+					<span></span>
+				</a>
+
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								PRODUCT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="shop.html">All Products</a></li>
+								<li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+								<li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+								<li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+								<li><a class="dropdown-item" href="shop.html">Networking</a></li>
+							</ul>
+
+							<style>
+								.dropdown-menu {
+									background-color: #ffffff; /* Default background color */
+									transition: background-color 0.3s ease;
+								}
+
+								.dropdown-menu .dropdown-item:hover {
+									background-color: #639cd1; /* Grey background color on hover */
+								}
+							</style>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								ABOUT US
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Story</a></li>
+								<li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CLIENT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+							</ul>
+						</li>
+						<li><a class="nav-link" href="career.html">CAREER</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CONTACT US 
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+								<li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+				</div>
+			</div>
+		</nav>
+
+		<style>
+			.navbar-nav .dropdown:hover .dropdown-menu {
+				display: block;
+				margin-top: 0; /* Adjust as needed */
+			}
+			@media (max-width: 768px) {
+				.navbar-toggler {
+					margin-left: auto; /* Align the button to the right */
+				}
+			}
+		</style>
+		<!-- End Header/Navigation -->
+
+		<!-- Banner Section -->
+		<section class="banner-section" style="height: 200px; background: url('IMAGE/_Multi\ core\ XLPE\ Insulated\ Aluminum\ Armored\ Cable.png') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center;">
+			<div class="container text-center">
+				<h2 style="color: rgb(0, 0, 0);">Welcome to Our Career Page</h2>
+			</div>
+		</section>
+		<!-- End Banner Section -->
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<h1 class="text-center">Join Our Team</h1>
+						<p class="text-center">We are looking for talented individuals to join our team. Please fill out the form below to apply.</p>
+						<form action="submit_application.php" method="post" enctype="multipart/form-data">
+							<div class="mb-3">
+								<label for="name" class="form-label">Name</label>
+								<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+							<div class="mb-3">
+								<label for="phone" class="form-label">Phone Number</label>
+								<input type="tel" class="form-control" id="phone" name="phone" required>
+							</div>
+							<div class="mb-3">
+								<label for="interest" class="form-label">Area of Interest</label>
+								<input type="text" class="form-control" id="interest" name="interest" required>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email ID</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+							<div class="mb-3">
+								<label for="resume" class="form-label">Resume (PDF or DOC)</label>
+								<input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary">Submit Application</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Middle Section -->
+
+<br>
+<br>
+		<!-- Start Footer -->
+		<footer class="footer-section">
+			<div class="container relative">
+				<div class="sofa-img text-right">
+					<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid w-100 h-auto d-none d-md-block">
+					<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid w-50 h-auto d-block d-md-none" style="position: absolute; bottom: 0; left: 0;">
+				</div>
+		
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap">
+							<a href="index.html" class="footer-logo">
+								<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;">
+							</a>
+						</div>
+						<p class="mb-4">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+		
+						<ul class="list-unstyled custom-social d-inline-flex">
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+		
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html">About us</a></li>
+									<li><a href="shop.html">Products</a></li>
+									<li><a href="blog.html">Certficate</a></li>
+									<li><a href="career.html">Career</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+									<li><strong>Manufacturer/Importer:</strong>Anocab</li>
+									<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6 text-center text-lg-start">
+							<p class="mb-2">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+						</div>
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Selection for Motor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CABLE SELECTION FOR MOTOR</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <!-- Phase Selection -->
+            <div class="input-group">
+                <label for="phase">Select Phase</label>
+                <select id="phase">
+                    <option value="">Choose Phase</option>
+                    <option value="single">Single Phase (230V)</option>
+                    <option value="double">Double Phase (430V)</option>
+                    <option value="three">Three Phase (430V)</option>
+                </select>
+            </div>
+
+            <!-- Length of Cable -->
+            <div class="input-group">
+                <label for="cableLength">Length of Cable</label>
+                <div class="length-input">
+                    <input type="number" id="cableLength" placeholder="Enter cable length">
+                    <select id="lengthUnit">
+                        <option value="meters">Meters</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Material Selection -->
+            <div class="input-group">
+                <label for="material">Material Selection</label>
+                <select id="material">
+                    <option value="">Choose Material</option>
+                    <option value="copper">Copper</option>
+                    <option value="aluminum">Aluminum</option>
+                </select>
+            </div>
+
+            <!-- Motor Power -->
+            <div class="input-group">
+                <label for="motorPower">Motor Power</label>
+                <div class="power-input">
+                    <input type="number" id="motorPower" placeholder="Enter motor power">
+                    <select id="powerUnit">
+                        <option value="">Choose</option>
+                        <option value="kw">kW</option>
+                        <option value="hp">HP</option>
+                        <option value="watt">Watt</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button onclick="calculateCableSize()">CALCULATE</button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <h2>Anocab Cable Size - Sq MM</h2>
+            <p id="result">Full Load Current</p>
+        </div>
+
+        <!-- Formula Reference Section -->
+        <!-- Formula Reference Section -->
+        <div class="formula-section" style="position: absolute; right: 0; top: 0; width: 300px; padding: 20px; background-color: #f9f9f9; border-left: 1px solid #ccc;">
+            <h3>Note:</h3>
+            <p><strong>Full Load Current</strong> = (Motor Power * 1000) / (1.732 * Voltage * Efficiency)</p>
+            <p><strong>Size</strong> = (1.5 * Full Load Current) / (Material Constant * Voltage Drop)</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Explore high-quality copper and aluminum wire and cable solutions for industrial, commercial, and residential use. Trusted manufacturer with advanced technology and premium materials. Contact us for customized wire solutions.">
+	<link rel="shortcut icon" href="IMAGE/favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Anocab</title>
+	<style>
+		body {
+			font-family: 'Kanit', sans-serif;
+			background-color: #f0f0f0;
+			margin: 0;
+			padding: 20px;
+		}
+		.product-showcase {
+			max-width: 1200px;
+			margin: 0 auto;
+			background-color: white;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.product-showcase h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.product-categories {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+		.product-categories button {
+			flex: 1 1 auto;
+			padding: 10px 20px;
+			margin: 5px;
+			background-color: #70a1c4fd;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.product-categories button:hover {
+			background-color: #0b0b0b;
+		}
+		.products {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+		}
+		.product {
+			background-color: #fff;
+			padding: 20px;
+			margin: 10px 0;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			opacity: 0;
+			perspective: 1000px; /* Added for 3D effect */
+		}
+		.product img {
+			max-width: 100%;
+			height: auto;
+			transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth hover effect */
+		}
+		.product:hover img {
+			transform: scale(1.1) rotateY(20deg); /* 3D effect with scale and rotation */
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+		.product h5 {
+			margin: 10px 0;
+			color:#000000;
+		}
+		.product p {
+			color: #555;
+		}
+		@media (max-width: 768px) {
+			.product-categories button {
+				padding: 8px 16px;
+				margin: 5px;
+			}
+			.product-showcase {
+				padding: 10px;
+			}
+		}
+		@media (max-width: 576px) {
+			.product-categories button {
+				padding: 6px 12px;
+				margin: 3px;
+			}
+			.product-showcase {
+				padding: 5px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		<div class="container d-flex justify-content-between align-items-center">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+				<span></span>
+			</a>
+
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							PRODUCT
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="shop.html">All Products</a></li>
+							<li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+							<li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+							<li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+							<li><a class="dropdown-item" href="shop.html">Networking</a></li>
+						</ul>
+
+						<style>
+							.dropdown-menu {
+								background-color: #ffffff; /* Default background color */
+								transition: background-color 0.3s ease;
+							}
+
+							.dropdown-menu .dropdown-item:hover {
+								background-color: #639cd1; /* Grey background color on hover */
+							}
+						</style>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							ABOUT US
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+							<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+							<li><a class="dropdown-item" href="about.html">Our Story</a></li>
+							<li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							CLIENT
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+						</ul>
+					</li>
+					<li><a class="nav-link" href="career.html">CAREER</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							CONTACT US 
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+							<li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+			</div>
+		</div>
+	</nav>
+
+	<style>
+		.navbar-nav .dropdown:hover .dropdown-menu {
+			display: block;
+			margin-top: 0; /* Adjust as needed */
+		}
+		@media (max-width: 768px) {
+			.navbar-toggler {
+				margin-left: auto; /* Align the button to the right */
+			}
+		}
+	</style>
+
+<section class="product-banner" style="background-image: url('IMAGE/banner.jpg'); background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; perspective: 1000px;">
+	<h1 style="color: rgb(0, 0, 0); margin: 0 auto; transform: rotateY(20deg); transition: transform 0.5s; text-align: center;">Our Anocab Products</h1>
+	<img src="IMAGE/PRODUCT DESIGN.png" alt="Banner Side Image" style="height: 80%; width: auto; transform: rotateY(-20deg); transition: transform 0.5s;">
+	<style>
+		.product-banner {
+			background-color: #f7f7f7;
+			color: rgb(0, 0, 0);
+			text-align: center;
+			padding: 10px 0;
+			margin-bottom: 20px;
+			position: relative;
+			overflow: hidden;
+		}
+		.product-banner h1, .product-banner img {
+			transform-style: preserve-3d;
+		}
+		.product-banner:hover h1 {
+			transform: rotateY(0deg);
+		}
+		.product-banner:hover img {
+			transform: rotateY(0deg);
+		}
+	</style>
+</section>
+
+
+<section class="product-showcase">
+	<h2>Our Products</h2>
+	<div class="product-categories">
+		<button class="filter-btn" onclick="filterProducts('all', this)">All Products</button>
+		<button class="filter-btn" onclick="filterProducts('domestic', this)">Domestic</button>
+		<button class="filter-btn" onclick="filterProducts('networking', this)">Networking</button>
+		<button class="filter-btn" onclick="filterProducts('agriculture', this)">Agriculture</button>
+		<button class="filter-btn" onclick="filterProducts('industrial', this)">Industrial</button>
+	</div>
+
+	<div class="products" id="product-list">
+		<!-- 26 Products with different categories -->
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Multistrand Single Core Copper wire.png" alt="Domestic 1">
+			<h5 style="color: #000000;">Multistrand Single Core Copper Wire</h5>
+			<a href="PRODUCT/Multistrand Single Core Copper Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Multi core Copper cable.png" alt="Domestic 2">
+			<h5 style="color: #000000;">Multi Core Copper Cable</h5>
+			<a href="PRODUCT/Multi Core Copper Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/PVC Insulated Single Core Aluminium Cables.png" alt="Domestic 3">
+			<h5 style="color: #070707;">PVC Insulated Single Core Aluminum Cables</h5>
+			<a href="PRODUCT/PVC Insulated Single Core.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Twin Twisted Copper Wire.png" alt="Domestic 4">
+			<h5 style="color: #000000;">Twin Twisted Copper Wire</h5>
+			<a href="PRODUCT/Twin Twisted Copper Wire.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Speaker Cable.png" alt="Domestic 5">
+			<h5 style="color: #000000;">Speaker Cable</h5>
+			<a href="PRODUCT/Speaker Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Co-axial Cable.png" alt="Domestic 6">
+			<h5 style="color: #000000;">Co-axial Cable</h5>
+			<a href="PRODUCT/Co-axial Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Automobile Wire.png" alt="Domestic 7">
+			<h5 style="color: #000000;">Automobile Wire</h5>
+			<a href="PRODUCT/Automobile Wire.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Single Core PVC Insulated Aluminum  Copper Armored  Unarmored Cable.png " alt="Domestic 8">
+			<h5 style="color: #010101;">Single Core PVC Insulated Aluminum / Copper Armored / Unarmored Cable</h5>
+			<a href="PRODUCT/Single Core PVC Insulated Aluminum Copper Armored Unarmored.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="domestic">
+			<img src="IMAGE/Multi core PVC Insulated Aluminum Unrmoured Cable.png" alt="Domestic 9">
+			<h5 style="color: #000000;">Multi core PVC Insulated Aluminum Unarmored Cable</h5>
+			<a href="PRODUCT/Multi core PVC Insulated Aluminum Unarmoured.html" class="btn btn-primary">View Details</a>
+		</div>
+		<!-- Networking Products -->
+		<div class="product" data-category="networking">
+			<img src="IMAGE/CCTV Cable .png" alt="Networking 1">
+			<h5 style="color: #000000;">CCTV Cable</h5>
+			<a href="PRODUCT/CCTV Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="networking">
+			<img src="IMAGE/LAN  Cable .png" alt="Networking 2">
+			<h5 style="color: #000000;">LAN Cable</h5>
+			<a href="PRODUCT/LAN Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="networking">
+			<img src="IMAGE/PV solar.png" alt="Networking 3">
+			<h5 style="color: #000000;">PV Solar Cable</h5>
+			<a href="PRODUCT/PV solar Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="networking">
+			<img src="IMAGE/Uni-Tube Un-Armoured Optical Fiber Cable.png" alt="Networking 4">
+			<h5 style="color: #000000;">Uni-Tube Un-Armoured Optical Fiber Cable</h5>
+			<a href="PRODUCT/Uni-Tube Un-Armoured Optical Fiber.html" class="btn btn-primary">View Details</a>
+		</div>
+		<!-- Agriculture Products -->
+		<div class="product" data-category="agriculture">
+			<img src="IMAGE/PVC Insulated Submersible Cable.png" alt="Agriculture 1">
+			<h5 style="color: #000000;">PVC Insulated Submersible Cable</h5>
+			<a href="PRODUCT/PVC Insulated Submersible.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="agriculture">
+			<img src="IMAGE/Submersible Winding Wire.png" alt="Agriculture 2">
+			<h5 style="color: #000000;">Submersible Winding Wire</h5>
+			<a href="PRODUCT/Submersible Winding Wire.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="agriculture">
+			<img src="IMAGE/Aerial Bunch Cable.png" alt="Agriculture 3">
+			<h5 style="color: #000000;">Aerial Bunch Cable</h5>
+			<a href="PRODUCT/Aerial Bunch Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="agriculture">
+			<img src="IMAGE/PVC Insulated Single Core Aluminium Cables.png" alt="Agriculture 4">
+			<h5 style="color: #000000;">PVC Insulated Single Core Aluminum Cables</h5>
+			<a href="PRODUCT/PVC Insulated Multicore Aluminium Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<!-- Industrial Products -->
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Armoured Unarmoured PVC Insulated Copper Control Cable.png" alt="Industrial 1">
+			<h5 style="color: #000000;">Armoured Unarmoured PVC Insulated Copper Control Cable</h5>
+			<a href="PRODUCT/Armoured Unarmoured PVC Insulated Copper.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/_Multi core XLPE Insulated Aluminum Armored Cable.png" alt="Industrial 2">
+			<h5 style="color: #000000;">Multi core XLPE Insulated Aluminum Armored Cable</h5>
+			<a href="PRODUCT/Multi core XLPE Insulated Aluminum Armored.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Multi core XLPE Insulated Aluminum Un-Armored Cable.png" alt="Industrial 3">
+			<h5 style="color: #000000;">Multi core XLPE Insulated Aluminum Unarmored Cable</h5>
+			<a href="PRODUCT/Multi core PVC Insulated Aluminum Unarmoured.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/PVC Insulated Multicore Aluminium Cable.png" alt="Industrial 4">
+			<h5 style="color: #000000;">PVC Insulated Multicore Aluminium Cable</h5>
+			<a href="PRODUCT/PVC Insulated Multicore Aluminium Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Single Core XLPE Insulated Aluminum  Copper Armored  Unarmored Cable.png" alt="Industrial 5">
+			<h5 style="color: #000000;">Single Core XLPE Insulated Aluminum / Copper Armored / Unarmored Cable</h5>
+			<a href="PRODUCT/Single Core XLPE Insulated Aluminum  Copper Armored  Unarmored.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Telecom Switch Board Cables.png" alt="Industrial 6">
+			<h5 style="color: #000000;">Telecom Switch Board Cables</h5>
+			<a href="PRODUCT/Telecom Switch Board.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Aluminum Conductor Galvanised Steel Reinforced.png" alt="Industrial 7">
+			<h5 style="color: #000000;">Aluminum Conductor Galvanised Steel Reinforced</h5>
+			<a href="PRODUCT/Aluminum Conductor Galvanised Steel Reinforced.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/All Aluminum Alloy Conductor (1).png" alt="Industrial 8">
+			<h5 style="color: #000000;">All Aluminum Alloy Conductor</h5>
+			<a href="PRODUCT/All Aluminum Alloy Conductor.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Aerial Bunch Cable.png" alt="Industrial 9">
+			<h5 style="color: #000000;">Aerial Bunch Cable</h5>
+			<a href="PRODUCT/Aerial Bunch Cable.html" class="btn btn-primary">View Details</a>
+		</div>
+		<div class="product" data-category="industrial">
+			<img src="IMAGE/Paper Covered Aluminum Conductor.png" alt="Industrial 10">
+			<h5 style="color: #000000;">Paper Covered Aluminum Conductor</h5>
+			<a href="PRODUCT/Paper Covered Aluminum Conductor.html" class="btn btn-primary">View Details</a>
+		</div>
+		</div>
+		</section>
+		<section style="margin-top: 140px;">
+		<style>
+			.product-categories {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 10px;
+				margin-bottom: 20px;
+			}
+
+			.product-categories button {
+				flex: 1 1 auto;
+				padding: 10px 20px;
+				margin: 5px;
+				background-color: #70a1c4fd;
+				color: white;
+				border: none;
+				cursor: pointer;
+			}
+
+	
+
+			.products {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 20px;
+			}
+
+			.product {
+				background-color: #fff;
+				padding: 20px;
+				margin: 10px 0;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				opacity: 0;
+				perspective: 1000px; /* Added for 3D effect */
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.product img {
+				max-width: 100%;
+				height: auto;
+				transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth hover effect */
+			}
+
+			.product:hover img {
+				transform: scale(1.1) rotateY(20deg); /* 3D effect with scale and rotation */
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			.product h5 {
+				margin: 10px 0;
+				color: #000000;
+			}
+
+			.product p {
+				color: #555;
+			}
+
+			.product a.btn {
+				display: block;
+				text-align: center;
+				margin-top: 10px;
+			}
+
+			@media (max-width: 768px) {
+				.product-categories button {
+					padding: 8px 16px;
+					margin: 5px;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.product-categories button {
+					padding: 6px 12px;
+					margin: 3px;
+				}
+			}
+		</style>
+
+
+
+		<!-- Footer -->
+		 <footer class="footer-section">
+	<div class="container relative">
+		<div class="sofa-img text-right">
+			<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid" style="width: 100%; height: auto;">
+		</div>
+
+		<style>
+			.sofa-img img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			@media (max-width: 768px) {
+				.sofa-img img {
+					max-width: 90%;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.sofa-img img {
+					max-width: 80%;
+				}
+			}
+		</style>
+
+		<div class="row g-5 mb-5">
+			<div class="col-lg-4">
+				<div class="mb-4 footer-logo-wrap">
+					<a href="index.html" class="footer-logo">
+						<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;" class="img-fluid">
+					</a>
+				</div>
+				<p class="mb-4" style="color: #000000;">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+
+				<ul class="list-unstyled custom-social d-inline-flex">
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+					<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-8">
+				<div class="row links-wrap">
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="about.html">About us</a></li>
+							<li><a href="shop.html">Products</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+							<li><strong>Manufacturer/Importer:</strong>Anocab</li>
+							<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-top copyright">
+			<div class="row pt-4">
+				<div class="col-lg-6 text-center text-lg-start">
+					<p class="mb-2" style ="color:#000000">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+				</div>
+				<div class="col-lg-6 text-center text-lg-end">
+					<ul class="list-unstyled d-inline-flex ms-auto">
+						<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script>
+	// Function to filter products based on category
+	function filterProducts(category) {
+		const products = document.querySelectorAll('.product');
+		products.forEach(product => {
+			product.style.display = 'none'; // Hide all products initially
+			if (category === 'all' || product.getAttribute('data-category') === category) {
+				product.style.display = 'block'; // Show matching category products
+				gsap.fromTo(product, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 });
+			}
+		});
+	}
+
+	// Initial animation when the page loads
+	document.addEventListener("DOMContentLoaded", function() {
+		const products = document.querySelectorAll('.product');
+		products.forEach((product, index) => {
+			gsap.fromTo(product, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, delay: index * 0.2 });
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="IMAGE/favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
+
+  <title>Anocab</title>
+  <style>
+	body {
+		background-color: #0C0C0F;
+	  color: #000000; /* Change the font color to black */
+	}
+	a {
+	  text-decoration: none;
+	  -webkit-transition: .3s all ease;
+	  -o-transition: .3s all ease;
+	  transition: .3s all ease;
+	  color: #000000; /* Change the font color to black */
+	  text-decoration: underline; }
+	.section-title {
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature h3 {
+	  font-size: 14px;
+	  color: #000000; /* Change the font color to black */
+	}
+	.feature p {
+	  font-size: 14px;
+	  line-height: 22px;
+	  color: #000000; /* Change the font color to black */
+	}
+	h1 ,h2 {
+    font-family: 'Kanit', sans-serif;
+    }
+	.popular-product {
+  overflow: hidden; /* Add this to hide the scrolling content */
+}
+
+.product-item-sm {
+  margin-bottom: 20px; /* Add some margin between items */
+}
+
+.marquee {
+  animation: marquee 8s linear infinite; /* Define the animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0); /* Start at the top */
+  }
+  100% {
+    transform: translateY(-100%); /* Move to the bottom */
+  }
+}
+</style>
+
+</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<div class="top-strip">
+			<div class="container d-flex justify-content-between align-items-center flex-wrap">
+				<div class="right-strip d-flex align-items-center">
+					<i class="fas fa-phone-alt"></i>
+					<span class="ms-2" style = "color:#e0e0e0">+1 234 567 890</span>
+					<a href="https://www.yourwebsite.com" class="ms-3"><i class="fas fa-globe"  style = "color:#e0e0e0"></i> www.yourwebsite.com</a>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.top-strip {
+				background-color: #0000008a;
+				padding: 5px 0;
+				border-bottom: 1px solid #e0e0e0;
+				animation: fadeIn 1s ease-in-out;
+			}
+			.left-strip a {
+				color: #000000;
+				transition: color 0.3s ease, transform 0.3s ease;
+			}
+			.left-strip a:hover {
+				color: #000000;
+				transform: scale(1.1);
+			}
+			.right-strip i {
+				color: #000000;
+				animation: bounceIn 1s ease-in-out;
+			}
+			.right-strip a {
+				color: #000000;
+				margin-left: 10px;
+				transition: color 0.3s ease, transform 0.3s ease;
+			}
+			.right-strip a:hover {
+				color: #000000;
+				transform: scale(1.1);
+			}
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			@keyframes bounceIn {
+				0%, 20%, 40%, 60%, 80%, 100% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
+			}
+			@media (max-width: 768px) {
+				.container {
+					flex-direction: column;
+					align-items: center;
+				}
+				.left-strip, .right-strip {
+					justify-content: center;
+				}
+				.right-strip {
+					margin-top: 10px;
+				}
+			}
+		</style>
+		<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container d-flex justify-content-between align-items-center">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="ADOCAB" width="150px" height="auto">
+					<span></span>
+				</a>
+
+				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								PRODUCT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="shop.html">All Products</a></li>
+								<li><a class="dropdown-item" href="shop.html">Domestic</a></li>
+								<li><a class="dropdown-item" href="shop.html">Industrial</a></li>
+								<li><a class="dropdown-item" href="shop.html">Agriculture</a></li>
+								<li><a class="dropdown-item" href="shop.html">Networking</a></li>
+							</ul>
+
+							<style>
+								.dropdown-menu {
+									background-color: #ffffff; /* Default background color */
+									transition: background-color 0.3s ease;
+								}
+
+								.dropdown-menu .dropdown-item:hover {
+									background-color: #639cd1; /* Grey background color on hover */
+								}
+							</style>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								ABOUT US
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
+								<li><a class="dropdown-item" href="about.html">Our Story</a></li>
+								<li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CLIENT
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+							</ul>
+						</li>
+						<li><a class="nav-link" href="career.html">CAREER</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								CONTACT US 
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="contact.html">Customer care</a></li>
+								<li><a class="dropdown-item" href="contact.html">Product Inquiry</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5"></ul>
+				</div>
+			</div>
+		</nav>
+
+		<style>
+			.navbar-nav .dropdown:hover .dropdown-menu {
+				display: block;
+				margin-top: 0; /* Adjust as needed */
+			}
+			@media (max-width: 768px) {
+				.container {
+					flex-direction: row;
+					align-items: center;
+				}
+				.navbar-brand, .navbar-toggler {
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		</style>
+		<!-- End Header/Navigation -->
+		<div class="price-marquee" onmouseover="stopMarquee()" onmouseout="startMarquee()">
+			<div class="marquee-content">
+				<span class="marquee-text"> 
+					<b>Aluminum EC (Balco) Rs: 259.75</b> <i class="fas fa-caret-up" style="color: green;"></i> | 
+					<b>Aluminum Alloy (Balco) Rs: 267.25</b> <i class="fas fa-caret-down" style="color: red;"></i> | 
+					<b>Copper (LME) Rs: 852.17</b> <i class="fas fa-caret-up" style="color: green;"></i> | 
+					<b>PVC - 67GER01F (Reliance) Rs: 92.63</b> <i class="fas fa-caret-down" style="color: red;"></i> | 
+					<b>LLDPE - X24065 (Reliance) Rs: 85.00</b> <i class="fas fa-caret-up" style="color: green;"></i>
+				</span>
+				<span style="margin-left: 50px;"></span>
+				<a href="https://www.whatsapp.com/channel/0029VameKzMDuMRYVlxV0l3u" target="_blank" style="color: #0df361; text-decoration: underline;">
+					<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="WhatsApp" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
+					Join WhatsApp for more 
+				</a>
+			</div>
+		</div>
+
+		<style>
+			.price-marquee {
+				background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background color */
+				padding: 5px 0; /* Padding for the strip */
+				overflow: hidden; /* Hide overflow */
+				width: 100%;
+				white-space: nowrap; /* Prevent text wrapping */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+				border-radius: 5px; /* Rounded corners */
+				transition: transform 0.3s ease; /* Smooth transition */
+			}
+
+			.price-marquee:hover {
+				transform: scale(1.02); /* Slightly enlarge on hover */
+			}
+
+			.marquee-content {
+				display: inline-block;
+				animation: marquee 35s linear infinite; /* Infinite horizontal scrolling */
+			}
+
+			@keyframes marquee {
+				0% {
+					transform: translateX(100%);
+				}
+				100% {
+					transform: translateX(-100%);
+				}
+			}
+
+			.marquee-text b {
+				animation: colorChange 5s infinite; /* Color change animation */
+			}
+
+			@keyframes colorChange {
+				0%, 100% {
+					color: #ffffff; /* White */
+				}
+
+			}
+
+			@media (max-width: 768px) {
+				.marquee-text {
+					font-size: 12px; /* Smaller font size for mobile view */
+				}
+
+				.price-marquee {
+					padding: 2px 0; /* Reduce padding for mobile view */
+				}
+
+				.marquee-content span, .marquee-content a {
+					font-size: 12px; /* Smaller font size for mobile view */
+				}
+
+				.marquee-content img {
+					width: 12px; /* Smaller image size for mobile view */
+					height: 12px;
+				}
+			}
+		</style>
+
+		<script>
+			function stopMarquee() {
+				document.querySelector('.marquee-content').style.animationPlayState = 'paused';
+			}
+
+			function startMarquee() {
+				document.querySelector('.marquee-content').style.animationPlayState = 'running';
+			}
+		</script>
+		<!-- Start whatsapp Section -->
+		<div class="whatsapp-chat-btn">
+			<a href="https://wa.me/916262002116" target="_blank">
+			  <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="WhatsApp">
+			</a>
+		</div>
+		<style>
+			.whatsapp-chat-btn {
+				position: fixed;
+				bottom: 20px; /* Position it 20px from the bottom */
+				right: 20px; /* Position it 20px from the right */
+				z-index: 1000;
+				animation: popEffect 1s infinite; /* Add pop effect animation */
+			}
+		
+			.whatsapp-chat-btn a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 60px;
+				height: 60px;
+				background-color: #25D366; /* WhatsApp green color */
+				border-radius: 50%; /* Make it a circle */
+				transition: background-color 0.3s ease;
+			}
+		
+			.whatsapp-chat-btn a:hover {
+				background-color: #ebeef2; /* WhatsApp blue color */
+			}
+		
+			.whatsapp-chat-btn img {
+				width: 30px;
+				height: 30px;
+			}
+		
+			@keyframes popEffect {
+				0%, 100% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.1);
+				}
+			}
+		</style>
+		<!-- Start Hero Section -->
+<section class="hero-section">
+	<div class="container">
+	  <div class="row align-items-center">
+		<div class="col-md-6 mx-auto text-center">
+		  <h1 class="hero-title" style="font-weight: normal; display: inline; font-family: 'Monoton', serif;;">Welcome to Anocab</h1>
+		  <br>
+		  <p class="hero-description" style="font-family: 'Kanit', sans-serif; font-size: 1.5rem; display: inline; position: relative; left: -20px;">Delivering top-quality, innovative cable solutions.</p>
+		</div>
+	  </div>
+	</div>
+	<!-- Spline Design Embed -->
+	<spline-viewer url="https://prod.spline.design/xNeO6hxywgyd3rav/scene.splinecode" style="position: absolute; top: 0; left: 0; width: 100%; height: 150%; z-index: -1; transform: scale(1.7);"></spline-viewer>
+</section>
+
+<style>
+	.hero-section {
+	  position: relative;
+	  padding: 150px 0; /* Increased padding to increase height */
+	  text-align: left;
+	  overflow: hidden;
+	}
+  
+	.hero-title {
+	  font-size: 4.5rem;
+	  color: #3c93c5;
+	  text-align: center;
+	  position: relative;
+	  left: -20px; /* Shift left in desktop mode */
+	  
+	}
+  
+	.hero-description {
+	  font-size: 1rem;
+	  color: #ffffff;
+	  margin-bottom: 20px;
+	  position: relative;
+	  text-align: center;
+	}
+  
+	/* Add responsiveness for mobile view */
+	@media (max-width: 768px) {
+	  .hero-section {
+		padding: 100px 0; /* Increase padding for mobile view */
+		text-align: center; /* Center text for mobile view */
+	  }
+  
+	  .hero-title {
+		font-size: 2rem;
+		left: 0; /* Reset left shift for mobile view */
+	  }
+  
+	  .hero-description {
+		font-size: 1rem;
+	  }
+  
+	  spline-viewer {
+		transform: scale(3); /* Increase the size of the animation for mobile view */
+	  }
+	}
+  
+	@media (max-width: 576px) {
+	  .hero-section {
+		padding: 80px 0; /* Further increase padding for smaller screens */
+	  }
+  
+	  .hero-title {
+		font-size: 1.75rem;
+	  }
+  
+	  .hero-description {
+		font-size: 0.875rem;
+	  }
+  
+	  spline-viewer {
+		transform: scale(3.5); /* Further increase the size of the animation for smaller screens */
+	  }
+	}
+</style>
+<!-- End Hero Section -->
+<section class="product-section">
+	<div class="container">
+		<h2 class="product-heading" style="color: #ffffff; font-size: 2rem;">Our Products</h2>
+		<div class="product-row-wrapper">
+			<button class="nav-btn prev-btn">&lt;</button>
+			<div class="product-row">
+				<!-- Product 1 -->
+				<div class="product-card">
+					<img src="IMAGE/_Multi core XLPE Insulated Aluminum Armored Cable.png" alt="Product 1">
+					<h3>Multi core XLPE Insulated Aluminum Armored Cable</h3>
+				</div>
+				<!-- Product 2 -->
+				<div class="product-card">
+					<img src="IMAGE/Aerial Bunch Cable.png" alt="Product 2">
+					<h3>Aerial Bunch Cable</h3>
+				</div>
+				<!-- Product 3 -->
+				<div class="product-card">
+					<img src="IMAGE/All Aluminum Alloy Conductor (1).png" alt="Product 3">
+					<h3>All Aluminum Alloy Conductor</h3>
+				</div>
+				<!-- Product 4 -->
+				<div class="product-card">
+					<img src="IMAGE/Armoured Unarmoured PVC Insulated Copper Control Cable.png" alt="Product 4">
+					<h3>Armoured Unarmoured PVC Insulated Copper Control Cable</h3>
+				</div>
+				<!-- Product 5 -->
+				<div class="product-card">
+					<img src="IMAGE/Automobile Wire.png" alt="Product 5">
+					<h3>Automobile wire</h3>
+				</div>
+				<!-- Product 6 -->
+				<div class="product-card">
+					<img src="IMAGE/Armoured Unarmoured PVC Insulated Copper Control Cable.png" alt="Product 6">
+					<h3>Armoured Unarmoured PVC Insulated Copper Control Cable</h3>
+				</div>
+			</div>
+			<button class="nav-btn next-btn">&gt;</button>
+		</div>
+		<!-- View All Products Button -->
+		<div class="view-all-wrapper">
+			<a href="shop.html" class="view-all-btn">View All Products</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	.product-section {
+		padding: 20px 0;
+	}
+
+	.product-heading {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.product-row-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center; /* Center the product row */
+	}
+
+	.product-row {
+		display: flex;
+		gap: 20px;
+		overflow: hidden;
+		scroll-behavior: smooth;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	.product-card {
+		flex: 0 0 auto;
+		width: 250px; /* Increased width */
+		height: 300px; /* Increased height */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+	}
+
+	.product-card img {
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+	}
+
+	.product-card h3 {
+		margin: 10px 0;
+		font-size: 1rem;
+		color: #333;
+		text-align: center;
+	}
+
+	.nav-btn {
+		padding: 5px 10px; /* Smaller padding */
+		background-color: #ffffff;
+		color: #333;
+		border: none;
+		cursor: pointer;
+		border-radius: 50%; /* Make it a circle */
+		font-size: 16px;
+		margin: 0 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+		transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+	}
+
+	.nav-btn:hover {
+		background-color: #f5fff7;
+		transform: scale(1.1); /* Slightly enlarge on hover */
+	}
+
+	/* Ensure only 4 products are visible in a row */
+	.product-row {
+		width: calc(250px * 4 + 60px); /* 4 products + gap */
+	}
+
+	.view-all-wrapper {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.view-all-btn {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #ffffff;
+		color: #000000;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: bold;
+		transition: background-color 0.3s ease, transform 0.3s ease;
+		animation: popEffect 1s infinite;
+	}
+
+	.view-all-btn:hover {
+		background-color: #ffffff;
+		transform: scale(1.1);
+	}
+
+	@keyframes popEffect {
+		0%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+	}
+
+	/* Responsive styles */
+	@media (max-width: 1200px) {
+		.product-card {
+			width: 220px; /* Adjust width for smaller screens */
+			height: 270px; /* Adjust height for smaller screens */
+		}
+	}
+
+	@media (max-width: 992px) {
+		.product-card {
+			width: 200px; /* Adjust width for smaller screens */
+			height: 250px; /* Adjust height for smaller screens */
+		}
+	}
+
+	@media (max-width: 768px) {
+		.product-card {
+			width: 180px; /* Adjust width for smaller screens */
+			height: 230px; /* Adjust height for smaller screens */
+		}
+	}
+
+	@media (max-width: 576px) {
+		.product-card {
+			width: 160px; /* Adjust width for smaller screens */
+			height: 210px; /* Adjust height for smaller screens */
+		}
+	}
+</style>
+
+<script>
+	const productRow = document.querySelector('.product-row');
+	const prevBtn = document.querySelector('.prev-btn');
+	const nextBtn = document.querySelector('.next-btn');
+
+	prevBtn.addEventListener('click', () => {
+		productRow.scrollBy({ left: -250, behavior: 'smooth' });
+	});
+
+	nextBtn.addEventListener('click', () => {
+		productRow.scrollBy({ left: 250, behavior: 'smooth' });
+	});
+</script>
+<!-- Start Product Marquee Section -->
+<br>
+<!-- Start Contact Section -->
+<section class="contact-section">
+	<div class="container">
+		<div class="row">
+			<!-- Left side with client logos -->
+			<div class="col-md-6">
+				<div class="client-logos">
+					<h2>Our Clients</h2>
+					<div class="logos">
+						<img src="images/client1.png" alt="Client 1">
+						<img src="images/client2.png" alt="Client 2">
+						<img src="images/client3.png" alt="Client 3">
+						<img src="images/client4.png" alt="Client 4">
+						<img src="images/client5.png" alt="Client 5">
+						<img src="images/client6.png" alt="Client 6">
+						<img src="images/client7.png" alt="Client 7">
+						<img src="images/client8.png" alt="Client 8">
+						<img src="images/client9.png" alt="Client 9">
+						<img src="images/client10.png" alt="Client 10">
+					</div>
+				</div>
+			</div>
+			<!-- Right side with contact form -->
+			<div class="col-md-6 form-section">
+				<div class="form-header">
+					<h2>Get in Touch</h2>
+					<p>Fill out the form below and we'll get back to you shortly.</p>
+				</div>
+
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="2f50411e-1805-49c2-820b-05c346c60014">
+					
+					<div class="form-group">
+						<input type="text" class="form-control" id="fname" name="name" required placeholder=" ">
+						<label class="floating-label" for="fname">Full Name</label>
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" name="email" required placeholder=" ">
+						<label class="floating-label" for="email">Email Address</label>
+					</div>
+
+					<div class="form-group">
+						<textarea class="form-control" id="message" name="message" required placeholder=" "></textarea>
+						<label class="floating-label" for="message">Your Message</label>
+					</div>
+
+					<button type="submit" class="submit-btn">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.client-logos {
+			padding: 3rem;
+			background: white;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			margin-bottom: 2rem;
+			overflow: hidden;
+			position: relative;
+			height: 100%; /* Make the height same as the form section */
+		}
+
+		.client-logos h2 {
+			font-size: 1.8rem;
+			color: #1e3c72;
+			margin-bottom: 1rem;
+		}
+
+		.logos {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			justify-content: center;
+			animation: scrollLogos 20s linear infinite;
+		}
+
+		.logos img {
+			width: 100px;
+			height: auto;
+			transition: transform 0.3s ease;
+		}
+
+		.logos img:hover {
+			transform: scale(1.1);
+		}
+
+		@keyframes scrollLogos {
+			0% {
+				transform: translateX(0);
+			}
+			100% {
+				transform: translateX(-100%);
+			}
+		}
+
+		.form-section {
+			flex: 1;
+			padding: 3rem;
+			background: linear-gradient(135deg, #d1d9e2d1, #ffffff); /* Added gradient shades */
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease;
+			position: relative;
+			height: 100%; /* Make the height same as the client logos section */
+		}
+
+		.form-section:hover {
+			transform: scale(1.05);
+		}
+
+		.form-header {
+			margin-bottom: 2rem;
+		}
+
+		.form-header h2 {
+			font-size: 1.8rem;
+			color: #000000;
+			margin-bottom: 0.5rem;
+		}
+
+		.form-header p {
+			color: #000000;
+			line-height: 1.6;
+		}
+
+		.form-group {
+			margin-bottom: 1.5rem;
+			position: relative;
+		}
+
+		.form-control {
+			width: 100%;
+			padding: 0.8rem;
+			border: 2px solid #ffffff;
+			border-radius: 8px;
+			font-size: 1rem;
+			transition: all 0.3s ease;
+			background: transparent;
+		}
+
+		.form-control:focus {
+			border-color: #1e3c72;
+			outline: none;
+			box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+		}
+
+		.floating-label {
+			position: absolute;
+			left: 0.8rem;
+			top: 0.8rem;
+			padding: 0 0.5rem;
+			color: #666;
+			transition: all 0.3s ease;
+			pointer-events: none;
+		}
+
+		.form-control:focus + .floating-label,
+		.form-control:not(:placeholder-shown) + .floating-label {
+			transform: translateY(-1.2rem) scale(0.85);
+			color: #1e3c72;
+		}
+
+		textarea.form-control {
+			min-height: 100px;
+			resize: vertical;
+		}
+
+		.submit-btn {
+			width: 100%;
+			padding: 0.8rem;
+			background: #1e3c72;
+			color: white;
+			border: none;
+			border-radius: 8px;
+			font-size: 1rem;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.submit-btn:hover {
+			background: #2a5298;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+		}
+
+		/* Animated logo */
+		.animated-logo {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 50px;
+			height: 50px;
+			animation: rotateLogo 5s linear infinite;
+		}
+
+		@keyframes rotateLogo {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.form-section {
+				padding: 2rem;
+			}
+
+			.form-header h2 {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.form-section {
+				padding: 2rem;
+				margin-bottom: 2rem; /* Add margin for spacing */
+			}
+
+			.form-header h2 {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.form-section {
+				padding: 1rem;
+				margin-bottom: 2rem; /* Add margin for spacing */
+			}
+
+			.form-header h2 {
+				font-size: 1.2rem;
+			}
+
+			.client-logos, .form-section {
+				height: auto; /* Adjust height for mobile view */
+			}
+		}
+	</style>
+</section>
+
+<br>
+<!-- Footer -->
+<footer class="footer-section">
+	<div class="container relative">
+		<div class="sofa-img text-right">
+			<img src="IMAGE/footercable.png" alt="Cable Image" class="img-fluid" style="width: 100%; height: auto;">
+		</div>
+
+		<style>
+			.sofa-img img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			@media (max-width: 768px) {
+				.sofa-img img {
+					max-width: 100%;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.sofa-img img {
+					max-width: 100%;
+				}
+			}
+		</style>
+
+<!-- form section (Unchanged) -->
+ 
+<br>
+<br>
+<br>
+		<div class="row g-5 mb-5">
+			<div class="col-lg-4">
+				<div class="mb-4 footer-logo-wrap">
+					<a href="index.html" class="footer-logo">
+						<img src="images/logo.png" alt="Anocab Logo" style="width: 170px; height: auto;" class="img-fluid">
+					</a>
+				</div>
+				<p class="mb-4" style="color: #000000;">Committed to delivering top-quality, innovative cable solutions with a focus on reliability, customer satisfaction, and industry-leading standards.</p>
+
+				<ul class="list-unstyled custom-social d-inline-flex">
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+					<li class="me-3"><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+					<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-8">
+				<div class="row links-wrap">
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="about.html">About us</a></li>
+							<li><a href="shop.html">Products</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="about.html"><strong><h3>Anode Electric Pvt. Ltd</h3></strong></a></li>
+							<li><strong>Manufacturer/Importer:</strong> Anocab</li>
+							<li><b>Registered Office:</b> Plot No. 10, IT Park, Bargi Hills, Jabalpur, Madhya Pradesh</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-top copyright">
+			<div class="row pt-4">
+				<div class="col-lg-6 text-center text-lg-start">
+					<p class="mb-2" style="color:#000000">&copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://designlabs.vercel.app/"><strong>Harsh Kumar</strong></a></p>
+				</div>
+				<div class="col-lg-6 text-center text-lg-end">
+					<ul class="list-unstyled d-inline-flex ms-auto">
+						<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer-section {
+		padding: 40px 0;
+		background-color: #f8f9fa;
+	}
+
+	.footer-logo-wrap {
+		text-align: center;
+	}
+
+	.footer-logo img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.custom-social {
+		justify-content: center;
+	}
+
+	.links-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.links-wrap ul {
+		padding: 0;
+	}
+
+	.links-wrap ul li {
+		list-style: none;
+		margin-bottom: 10px;
+	}
+
+	.links-wrap ul li a {
+		color: #000000;
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.links-wrap ul li a:hover {
+		color: #25D366;
+	}
+
+	@media (max-width: 768px) {
+		.footer-logo-wrap {
+			text-align: center;
+		}
+
+		.links-wrap {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.links-wrap ul {
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 576px) {
+		.links-wrap ul {
+			text-align: center;
+		}
+	}
+</style>
+<!-- End Footer Section (Unchanged) -->
+
+<!-- Bootstrap JS and other libraries -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
