@@ -119,16 +119,8 @@
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="about.html">Our Mission</a></li>
 								<li><a class="dropdown-item" href="about.html">Our Vision</a></li>
-								<li><a class="dropdown-item" href="about.html">Our Story</a></li>
-								<li><a class="dropdown-item" href="shop.html">Founder's Profile</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								CLIENT
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="Certificate.html">Certificates</a></li>
+								<li><a class="dropdown-item" href="Certificate.html"> Certficates</a></li>
+								<li><a class="dropdown-item" href="about.html">Founder's Profile</a></li>
 							</ul>
 						</li>
 						<li><a class="nav-link" href="career.html">CAREER</a></li>
@@ -154,8 +146,13 @@
 				margin-top: 0; /* Adjust as needed */
 			}
 			@media (max-width: 768px) {
-				.navbar-toggler {
-					margin-left: auto; /* Align the button to the right */
+				.container {
+					flex-direction: row;
+					align-items: center;
+				}
+				.navbar-brand, .navbar-toggler {
+					margin-left: auto;
+					margin-right: auto;
 				}
 			}
 		</style>
